@@ -1,3 +1,10 @@
+.flex-column-space-around {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -5,14 +12,19 @@
 }
 
 .main {
+    position: relative;
     width: 414px;
+    height: 1026px;
     background: #E5E5E5;
 }
 
 .header {
     height: 92px;
+    position: sticky;
+    top: 0;
     background: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 20px;
 }
 
 .header h1 {
@@ -36,6 +48,11 @@
     color: #FFFFFF;
 }
 
+.menu {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
 .menu h1 {
     font-family: 'Righteous';
     font-style: normal;
@@ -43,12 +60,16 @@
     font-size: 26px;
     line-height: 32px;
     letter-spacing: 0.018em;
+    margin-bottom: 17px;
 
     color: #333333;
 }
 
 .container-opcoes {
-    overflow-x: scroll
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
 }
 
 .card-opcao {
@@ -57,13 +78,35 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    margin-right: 15px;
 }
 
-.card-opcao img {
+.imagem {
     width: 144px;
     height: 87px;
     border-radius: 4px;
+    margin: 18px 14px 0;
 }
+
+.textos {
+    height: 90px;
+    width: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 8px 14px;
+}
+
+.card-opcao .nome {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #333333;
+    }
 
 .card-opcao .descricao {
     font-family: 'Roboto';
@@ -83,4 +126,30 @@
     line-height: 19px;
 
     color: #000000;
+}
+
+.footer {
+    position: sticky;
+    width: 414px;
+    height: 92px;
+    bottom: 0px;
+
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer button {
+    width: 364px;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
 }
