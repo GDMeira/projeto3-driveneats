@@ -7,6 +7,7 @@ let priceMainCouseSelected;
 let nameSodaSelected;
 let nameDesertSelected;
 let priceDesertSelected;
+let totalPrice;
 
 function foodSelector(item) {
     if (!mainCourseSelected) {
@@ -86,8 +87,9 @@ function activateOverlay() {
     item3.querySelector('.name').textContent = nameDesertSelected;
     item3.querySelector('.price').textContent = priceDesertSelected;
 
-    const total = Number(priceMainCouseSelected.replace(',','.'))+Number(priceSodaSelected.replace(',','.'))+Number(priceDesertSelected.replace(',','.'));
-    overlay.querySelector('.total .price').textContent = total.toFixed(2).toString().replace('.',',');
+    totalPrice = Number(priceMainCouseSelected.replace(',','.'))+Number(priceSodaSelected.replace(',','.'))+Number(priceDesertSelected.replace(',','.'));
+    totalPrice = totalPrice.toFixed(2).toString().replace('.',',');
+    overlay.querySelector('.total .price').textContent = totalPrice;
 }
 
 function deactivateOverlay() {
@@ -98,4 +100,17 @@ function deactivateOverlay() {
 function goToWhatsApp() {
     const costumerName = prompt('Digite seu nome, por favor: ');
     const costumerAdress = prompt('Digite seu endereço, por favor: ');
+    const whatsAppMessage = ['Olá, gostaria de fazer o pedido:'+
+                            '\n- Prato: ' + nameMainCouseSelected+
+                            '\n- Bebida: ' + nameSodaSelected+
+                            '\n- Sobremesa: ' + nameDesertSelected+
+                            '\nTotal: R$ ' + 
+                            '\n\nNome: ' + costumerName +
+                            '\nEndereço: ' + costumerAdress];
+
+    const whatsAppMessageEnconded = window.encodeURIComponent(whatsAppMessage);
+    
+    const whatsLink = 'https://wa.me/5519999999999?text=' + whatsAppMessageEnconded;
+
+    window.open(whatsLink);
 }
