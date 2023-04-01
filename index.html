@@ -14,6 +14,42 @@
 </head>
 <body>
     <div class="container">
+        <div class="overlay-finish-order inativo">
+            <div class="order">
+                <h1>Confirme seu pedido</h1>
+                <div class="container-items">
+                    <div class="item">
+                        <div class="name">item</div>
+                        <div class="price">0</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="name">item</div>
+                        <div class="price">0</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="name">item</div>
+                        <div class="price">0</div>
+                    </div>
+
+                    <div class="total">
+                        <div class="name">TOTAL</div>
+                        <div class="price">0</div>
+                    </div>
+                </div>
+
+                <div class="finish">
+                    <button onclick="goToWhatsApp()">Tudo certo, pode pedir!</button>
+                </div>
+
+                <div class="cancel">
+                    <button onclick="deactivateOverlay()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+
         <div class="main">
             <div class="header">
                 <h1>DrivenEats</h1>
@@ -33,7 +69,10 @@
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
-                            <div class="preco">R$ 14,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">14,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -51,7 +90,10 @@
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
-                            <div class="preco">R$ 15,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">15,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -69,7 +111,10 @@
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
-                            <div class="preco">R$ 16,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">16,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -94,7 +139,10 @@
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
-                            <div class="preco">R$ 4,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">4,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -112,7 +160,10 @@
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
-                            <div class="preco">R$ 5,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">5,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -130,7 +181,10 @@
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
-                            <div class="preco">R$ 6,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">6,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -153,7 +207,10 @@
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
-                            <div class="preco">R$ 7,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">7,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -171,7 +228,10 @@
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
-                            <div class="preco">R$ 8,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">8,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -189,7 +249,10 @@
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
-                            <div class="preco">R$ 9,90</div>
+                            <div class="preco">
+                                <div class="moeda">R$ </div>
+                                <div class="valor">9,90</div>
+                            </div>
                         </div>
 
                         <div class="icon">
@@ -208,7 +271,7 @@
                 </div>
 
                 <div class="botao-pedido-finalizado inativo">
-                    <button>Finalizar pedido</button>
+                    <button onclick="activateOverlay()">Finalizar pedido</button>
                 </div>
             </div>
         </div>

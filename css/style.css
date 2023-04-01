@@ -1,19 +1,118 @@
-.flex-column-space-around {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.container {
+    width: 414px;
 }
 
-.container {
+.overlay-finish-order {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.order {
+    position: fixed;
+    width: 377px;
+    height: 353px;
+    box-sizing: border-box;
+    padding: 20px;
+    left: auto;
+    top: calc(50% - 353px/2 - 0.5px);
+    left: 18px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+}
+
+.order h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.container-items {
+    width: 100%;
+}
+
+.container-items *{
+    margin: 5px;
+}
+
+.container-items .item{
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+
+    color: #FFFFFF;
+}
+
+.order .finish button{
+    width: 333px;
+    height: 52px; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
+
+    color: #50D074;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 0;
+}
+
+.order .cancel button{
+    width: 333px;
+    height: 52px; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
+
+    color: #ffffff;
+    background-color: #50D074;
+    border-radius: 30px;
+    border: 0;
+}
+
+.container-items .total {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+
+    color: #FFFFFF;
 }
 
 .main {
     position: relative;
-    width: 414px;
+    width: 100%;
     height: 1026px;
     background: #E5E5E5;
 }
@@ -25,6 +124,7 @@
     background: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-left: 20px;
+    z-index: 1;
 }
 
 .header h1 {
@@ -74,12 +174,13 @@
 
 .card-opcao {
     position: relative;
-    width: 172px;
+    width: 187px;
     height: 216px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     margin-right: 15px;
+    box-sizing: border-box;
 }
 
 .imagem {
@@ -97,6 +198,10 @@
     justify-content: space-between;
     align-items: left;
     margin: 8px 14px;
+}
+
+.preco {
+    display: flex;
 }
 
 .card-opcao .nome {
