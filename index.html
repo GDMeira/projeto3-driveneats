@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css' rel='stylesheet'>
     <title>Driven Eats</title>
 </head>
 <body>
@@ -19,48 +20,60 @@
                 <h2>Sua comida em 6 minutos</h2>
             </div>
         
-            <div class="menu">
+            <div class="menu prato">
                 <h1>Primeiro, seu prato</h1>
                 <div class="container-opcoes">
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="foodSelector(this)">
                         <div class="imagem">
                             <img src="./images/frango_yin_yang.png" alt="">    
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Frango yin yang</div>
+                            <div class="nome">Frango yin yang 1</div>
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
                             <div class="preco">R$ 14,90</div>
                         </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
+                        </div>
                     </div>
 
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="foodSelector(this)">
                         <div class="imagem">
                             <img src="./images/frango_yin_yang.png" alt="">    
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Frango yin yang</div>
+                            <div class="nome">Frango yin yang 2</div>
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
                             <div class="preco">R$ 15,90</div>
                         </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
+                        </div>
                     </div>
 
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="foodSelector(this)">
                         <div class="imagem">
                             <img src="./images/frango_yin_yang.png" alt="">    
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Frango yin yang</div>
+                            <div class="nome">Frango yin yang 3</div>
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
                             <div class="preco">R$ 16,90</div>
+                        </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
                         </div>
                     </div>
                     
@@ -68,95 +81,119 @@
                 
             </div>
         
-            <div class="menu">
+            <div class="menu bebida">
                 <h1>Agora, sua bebida</h1>
                 <div class="container-opcoes">
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="sodaSelector(this)">
                         <div class="imagem">
                             <img src="./images/coca-cola.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada</div>
+                            <div class="nome">Coquinha gelada 1</div>
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
                             <div class="preco">R$ 4,90</div>
                         </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
+                        </div>
                     </div>
 
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="sodaSelector(this)">
                         <div class="imagem">
                             <img src="./images/coca-cola.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada</div>
+                            <div class="nome">Coquinha gelada 2</div>
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
                             <div class="preco">R$ 5,90</div>
                         </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
+                        </div>
                     </div>
 
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="sodaSelector(this)">
                         <div class="imagem">
                             <img src="./images/coca-cola.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada</div>
+                            <div class="nome">Coquinha gelada 3</div>
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
                             <div class="preco">R$ 6,90</div>
                         </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         
-            <div class="menu">
-                <h1>Primeiro, seu prato</h1>
+            <div class="menu sobremesa">
+                <h1>Por fim, sua sobremesa</h1>
                 <div class="container-opcoes">
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="desertSelector(this)">
                         <div class="imagem">
                             <img src="./images/pudim.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada</div>
+                            <div class="nome">Pudim 1</div>
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
                             <div class="preco">R$ 7,90</div>
                         </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
+                        </div>
                     </div>
 
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="desertSelector(this)">
                         <div class="imagem">
                             <img src="./images/pudim.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada</div>
+                            <div class="nome">Pudim 2</div>
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
                             <div class="preco">R$ 8,90</div>
                         </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
+                        </div>
                     </div>
 
-                    <div class="card-opcao">
+                    <div class="card-opcao" onclick="desertSelector(this)">
                         <div class="imagem">
                             <img src="./images/pudim.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada</div>
+                            <div class="nome">Pudim 3</div>
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
                             <div class="preco">R$ 9,90</div>
+                        </div>
+
+                        <div class="icon">
+                            <i class="gg-check-o"></i>
                         </div>
                     </div>
                 </div>
@@ -164,9 +201,15 @@
             </div>
         
             <div class="footer">
-                <button>Selecione os 3 itens para fechar
-                    o pedido
-                </button>
+                <div class="botao-pedido-inacabado">
+                    <button>Selecione os 3 itens para fechar
+                        o pedido
+                    </button>
+                </div>
+
+                <div class="botao-pedido-finalizado inativo">
+                    <button>Finalizar pedido</button>
+                </div>
             </div>
         </div>
     </div>

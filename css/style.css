@@ -73,6 +73,7 @@
 }
 
 .card-opcao {
+    position: relative;
     width: 172px;
     height: 216px;
     background: #FFFFFF;
@@ -141,7 +142,7 @@
     align-items: center;
 }
 
-.footer button {
+.botao-pedido-inacabado button{
     width: 364px;
     height: 61px;
     background: #CBCBCB;
@@ -153,4 +154,43 @@
     font-size: 20px;
     line-height: 23px;
     text-align: center;
+}
+
+.botao-pedido-finalizado button{
+    width: 364px;
+    height: 61px;
+    background: rgb(31, 182, 31);
+    border-radius: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.selecionado {
+    border: 5px solid rgb(31, 182, 31);
+}
+
+.selecionado .icon {
+    display: flex;
+}
+
+.icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(31, 182, 31);
+
+    display: none;
+}
+
+.ativo {
+    display: inline;
+}
+
+.inativo {
+    display: none;
 }
