@@ -58,7 +58,7 @@ function activeFinishButton() {
 
     if (mainCourseSelected && sodaSelected && desertSelected) {
         const buttonUnfinishedOrder = document.querySelector('.botao-finalizar-pedido button');
-        buttonUnfinishedOrder.textContent = 'Finalizar pedido';
+        buttonUnfinishedOrder.textContent = 'Fechar pedido';
         buttonUnfinishedOrder.style.background = 'rgb(31, 182, 31)';
         buttonUnfinishedOrder.removeAttribute("disabled");
     }
