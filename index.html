@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="overlay-finish-order inativo">
-            <div class="order">
+            <div class="order" data-test="confirm-order-modal">
                 <h1>Confirme seu pedido</h1>
                 <div class="container-items">
                     <div class="item">
@@ -39,11 +39,11 @@
                     </div>
                 </div>
 
-                <div class="finish">
+                <div class="finish" data-test="confirm-order-btn">
                     <button onclick="goToWhatsApp()">Tudo certo, pode pedir!</button>
                 </div>
 
-                <div class="cancel">
+                <div class="cancel" data-test="cancel-order-btn">
                     <button onclick="deactivateOverlay()">Cancelar</button>
                 </div>
             </div>
@@ -59,19 +59,19 @@
             <div class="menu prato">
                 <h1>Primeiro, seu prato</h1>
                 <div class="container-opcoes">
-                    <div class="card-opcao" onclick="foodSelector(this)">
+                    <div class="card-opcao" data-test="dish" onclick="foodSelector(this)">
                         <div class="imagem">
                             <img src="./images/frango_yin_yang.png" alt="">    
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Frango yin yang 1</div>
+                            <div class="nome" data-test="item-name">Frango yin yang 1</div>
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">14,90</div>
+                                <div class="valor" data-test="item-price">14,90</div>
                             </div>
                         </div>
 
@@ -80,19 +80,19 @@
                         </div>
                     </div>
 
-                    <div class="card-opcao" onclick="foodSelector(this)">
+                    <div class="card-opcao" data-test="dish" onclick="foodSelector(this)">
                         <div class="imagem">
                             <img src="./images/frango_yin_yang.png" alt="">    
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Frango yin yang 2</div>
+                            <div class="nome" data-test="item-name">Frango yin yang 2</div>
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">15,90</div>
+                                <div class="valor" data-test="item-price">15,90</div>
                             </div>
                         </div>
 
@@ -101,19 +101,19 @@
                         </div>
                     </div>
 
-                    <div class="card-opcao" onclick="foodSelector(this)">
+                    <div class="card-opcao" data-test="dish" onclick="foodSelector(this)">
                         <div class="imagem">
                             <img src="./images/frango_yin_yang.png" alt="">    
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Frango yin yang 3</div>
+                            <div class="nome" data-test="item-name">Frango yin yang 3</div>
                             <div class="descricao">
                                 Um pouco de batata, um pouco de salada
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">16,90</div>
+                                <div class="valor" data-test="item-price">16,90</div>
                             </div>
                         </div>
 
@@ -129,19 +129,19 @@
             <div class="menu bebida">
                 <h1>Agora, sua bebida</h1>
                 <div class="container-opcoes">
-                    <div class="card-opcao" onclick="sodaSelector(this)">
+                    <div class="card-opcao" data-test="drink" onclick="sodaSelector(this)">
                         <div class="imagem">
                             <img src="./images/coca-cola.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada 1</div>
+                            <div class="nome" data-test="item-name">Coquinha gelada 1</div>
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">4,90</div>
+                                <div class="valor" data-test="item-price">4,90</div>
                             </div>
                         </div>
 
@@ -150,19 +150,19 @@
                         </div>
                     </div>
 
-                    <div class="card-opcao" onclick="sodaSelector(this)">
+                    <div class="card-opcao" data-test="drink" onclick="sodaSelector(this)">
                         <div class="imagem">
                             <img src="./images/coca-cola.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada 2</div>
+                            <div class="nome" data-test="item-name">Coquinha gelada 2</div>
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">5,90</div>
+                                <div class="valor" data-test="item-price">5,90</div>
                             </div>
                         </div>
 
@@ -171,19 +171,19 @@
                         </div>
                     </div>
 
-                    <div class="card-opcao" onclick="sodaSelector(this)">
+                    <div class="card-opcao" data-test="drink" onclick="sodaSelector(this)">
                         <div class="imagem">
                             <img src="./images/coca-cola.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Coquinha gelada 3</div>
+                            <div class="nome" data-test="item-name">Coquinha gelada 3</div>
                             <div class="descricao">
                                 Lata 350 ml
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">6,90</div>
+                                <div class="valor" data-test="item-price">6,90</div>
                             </div>
                         </div>
 
@@ -197,19 +197,19 @@
             <div class="menu sobremesa">
                 <h1>Por fim, sua sobremesa</h1>
                 <div class="container-opcoes">
-                    <div class="card-opcao" onclick="desertSelector(this)">
+                    <div class="card-opcao" data-test="dessert" onclick="desertSelector(this)">
                         <div class="imagem">
                             <img src="./images/pudim.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Pudim 1</div>
+                            <div class="nome" data-test="item-name">Pudim 1</div>
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">7,90</div>
+                                <div class="valor" data-test="item-price">7,90</div>
                             </div>
                         </div>
 
@@ -218,19 +218,19 @@
                         </div>
                     </div>
 
-                    <div class="card-opcao" onclick="desertSelector(this)">
+                    <div class="card-opcao" data-test="dessert" onclick="desertSelector(this)">
                         <div class="imagem">
                             <img src="./images/pudim.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Pudim 2</div>
+                            <div class="nome" data-test="item-name">Pudim 2</div>
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">8,90</div>
+                                <div class="valor" data-test="item-price">8,90</div>
                             </div>
                         </div>
 
@@ -239,19 +239,19 @@
                         </div>
                     </div>
 
-                    <div class="card-opcao" onclick="desertSelector(this)">
+                    <div class="card-opcao" data-test="dessert" onclick="desertSelector(this)">
                         <div class="imagem">
                             <img src="./images/pudim.png" alt="">
                         </div>
                         
                         <div class="textos">
-                            <div class="nome">Pudim 3</div>
+                            <div class="nome" data-test="item-name">Pudim 3</div>
                             <div class="descricao">
                                 Apenas um delicioso pudim
                             </div>
                             <div class="preco">
                                 <div class="moeda">R$ </div>
-                                <div class="valor">9,90</div>
+                                <div class="valor" data-test="item-price">9,90</div>
                             </div>
                         </div>
 
@@ -271,7 +271,7 @@
                 </div>
 
                 <div class="botao-pedido-finalizado inativo">
-                    <button onclick="activateOverlay()">Finalizar pedido</button>
+                    <button data-test="order-btn" onclick="activateOverlay()">Finalizar pedido</button>
                 </div>
             </div>
         </div>

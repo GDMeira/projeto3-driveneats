@@ -104,7 +104,7 @@ function goToWhatsApp() {
                             '\n- Prato: ' + nameMainCouseSelected+
                             '\n- Bebida: ' + nameSodaSelected+
                             '\n- Sobremesa: ' + nameDesertSelected+
-                            '\nTotal: R$ ' + 
+                            '\nTotal: R$ ' + totalPrice+
                             '\n\nNome: ' + costumerName +
                             '\nEndereço: ' + costumerAdress];
 
