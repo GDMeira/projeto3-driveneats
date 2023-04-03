@@ -52,16 +52,15 @@ function desertSelector(item) {
 }
 
 function activeFinishButton() {
-    const ismainCourseSelected = !mainCourseSelected.isEmpty;
-    const issodaSelected = !sodaSelected.isEmpty;
-    const isdesertSelected = !desertSelected.isEmpty;
+    const isMainCourseSelected = !mainCourseSelected.isEmpty;
+    const isSodaSelected = !sodaSelected.isEmpty;
+    const isDesertSelected = !desertSelected.isEmpty;
 
-    if (ismainCourseSelected && issodaSelected && isdesertSelected) {
-        const buttonUnfinishedOrder = document.querySelector('.botao-pedido-inacabado');
-        buttonUnfinishedOrder.classList.add('inativo');
-
-        const buttonFinishedOrder = document.querySelector('.botao-pedido-finalizado');
-        buttonFinishedOrder.classList.remove('inativo');
+    if (mainCourseSelected && sodaSelected && desertSelected) {
+        const buttonUnfinishedOrder = document.querySelector('.botao-finalizar-pedido button');
+        buttonUnfinishedOrder.textContent = 'Finalizar pedido';
+        buttonUnfinishedOrder.style.background = 'rgb(31, 182, 31)';
+        buttonUnfinishedOrder.removeAttribute("disabled");
     }
 }
 

@@ -247,7 +247,7 @@
     align-items: center;
 }
 
-.botao-pedido-inacabado button{
+.botao-finalizar-pedido button{
     width: 364px;
     height: 61px;
     background: #CBCBCB;
@@ -262,17 +262,7 @@
 }
 
 .botao-pedido-finalizado button{
-    width: 364px;
-    height: 61px;
     background: rgb(31, 182, 31);
-    border-radius: 50px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
 }
 
 .selecionado {
